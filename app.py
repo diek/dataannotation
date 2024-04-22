@@ -1,7 +1,7 @@
 # dataannotation
 
-# in_file = "coding_qual_input.txt"
-in_file = "small.txt"
+in_file = "coding_qual_input.txt"
+# in_file = "small.txt"
 
 
 def read_encoder(file_path):
@@ -28,4 +28,4 @@ encoded_pairs = read_encoder(in_file)
 keys_to_read = read_pyramid("pyramid_01.txt")
 
 for key in keys_to_read:
-    print(encoded_pairs[key].rstrip())
+    print(f"{key}: {encoded_pairs[key].rstrip()}")
